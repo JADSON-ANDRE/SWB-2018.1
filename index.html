@@ -44,14 +44,8 @@
 	acesso ao processador. Além disso, existem os fluxos simultâneos, que ocorrem quando
 	dois processos são executados na mesma fatia de tempo, por exemplo, o processo A sendo
 	iniciado quando o processo B está em execução, isso define uma situação de concorrência.</p>
-
-	</div>
-   </page>
-		
- <page size="A4">     
-      <div class="format"> 
-
-		<p>Ainda no contexto de Processos, temos os termos pai e filho, consiste no fato de
+	      
+	      <p>Ainda no contexto de Processos, temos os termos pai e filho, consiste no fato de
 	que um processo pode criar outro(s) processo(s), este é o processo pai, enquanto os
 	processos gerados, são os filhos e esses também podem gerar outro(s) processo(s), sendo
 	processos filhos quase uma cópia do processo pai, com exceção do PID. Cada processo é
@@ -59,6 +53,12 @@
 	cada um dos processos (encerrar, colocar para dormir, alterar o nível de prioridade, entre
 	outros), e sendo esse um processo filho, é possível identificar por qual processo ele foi
 	gerado.</p>
+
+	</div>
+   </page>
+		
+ <page size="A4">     
+      <div class="format"> 
 		
 		<p>Processos filhos devem ser mortos assim que o processo pai é finalizado, pois
 	mesmo fora da área de execução consomem memória, desta forma, se o processo pai não
@@ -87,14 +87,8 @@
 	problema disso está em como sincronizar o fluxo. Em cima disso, vemos alguns exemplos
 	que invocam a função fork(), mas o resultado ainda é ineficiente, pois em alguns casos
 	ainda é possível que ocorra problemas.</p>
-
-	</div>
-   </page>
-		
- <page size="A4">     
-      <div class="format"> 
-
-    	<p>Outra forma de fluxo de controle excepcional são Saltos Não-Locais, essa já é no
+	      
+	      <p>Outra forma de fluxo de controle excepcional são Saltos Não-Locais, essa já é no
 	nível de usuário e transfere o controle de uma função diretamente para outra que está em
 	execução, isso sem ter que passar pela sequência de chamada e retorno. Os saltos não-
 	locais são fornecidos por duas funções (setjmp e longjmp), onde a primeira salva o
@@ -107,6 +101,9 @@
 	processos. São importantes para o usuário domésticos, mas ainda mais importante ao
 	programador, pois tende a facilitar no desenvolvimento, caso precise fazer algum tipo de
 	alteração no sistema.</p>
+
+	</div>
+   </page>
 
 	</body>
 </html>
